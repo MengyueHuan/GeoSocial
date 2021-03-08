@@ -33,36 +33,6 @@ export class Login extends React.Component {
             });
     }
 
-    // handleSubmit = (e) => {
-    //     console.log("123123")
-    //     e.preventDefault();
-    //     this.props.form.validateFields((err, values) => {
-    //         if (!err) {
-    //             console.log('Received values of form: ', values);
-    //             fetch(`${API_ROOT}/login`, {
-    //                 method: 'POST',
-    //                 body: JSON.stringify({
-    //                     username: values.username,
-    //                     password: values.password,
-    //                 }),
-    //             }).then((response) => {
-    //                 if (response.ok) {
-    //                     return response.text();
-    //                 }
-    //                 throw new Error(response.statusText);
-    //             })
-    //                 .then((data) => {
-    //                     this.props.handleLogin(data);
-    //                     message.success('Login Success.');
-    //                 })
-    //                 .catch((e) => {
-    //                     console.log(e);
-    //                     message.error('Login Failed.');
-    //                 });
-    //         }
-    //     });
-    // }
-
     render() {
         return (
             <Form onFinish={this.onFinish} className="login-form">
@@ -82,5 +52,3 @@ export class Login extends React.Component {
         );
     }
 }
-
-// export const Login = Form.create()(NormalLoginForm);

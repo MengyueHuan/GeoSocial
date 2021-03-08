@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form, Upload, Input } from 'antd';
-import Icon from '@ant-design/icons';
+// import Icon from '@ant-design/icons';
 
 const FormItem = Form.Item;
 
@@ -16,7 +16,6 @@ export class CreatePostForm extends React.Component {
     beforeUpload = () => false
 
     render() {
-        // const { getFieldDecorator } = this.props.form;
         const formItemLayout = {
             labelCol: { span: 6 },
             wrapperCol: { span: 14 },
@@ -57,5 +56,3 @@ export class CreatePostForm extends React.Component {
         );
     }
 }
-
-// export const CreatePostForm = Form.create()(NormalCreatePostForm);

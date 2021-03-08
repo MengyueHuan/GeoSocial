@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Icon } from 'antd';
 import Icon from '@ant-design/icons';
 import logo from '../assets/images/logo.svg';
 
